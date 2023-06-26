@@ -1,6 +1,13 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
+
 
 const AdminNav = () => {
+  const navigate = useNavigate()
+  const handleLogout = () =>{
+    localStorage.removeItem('admin')
+    navigate('admin/login')
+  }
   return (
     <div>
       <div>
@@ -18,7 +25,7 @@ const AdminNav = () => {
 
             <ul className="list">
               <li>
-                <a href=" ">Logout</a>
+                <a href=" " onClick={handleLogout}>Logout</a>
               </li>
             </ul>
           </div>

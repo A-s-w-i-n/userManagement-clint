@@ -124,16 +124,21 @@
 
   .container {
     max-width: 300px;
+    position: relative;
+    top: 150px;
+    max-height: 50px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #000;
+    background-color: #dd9258;
     border-radius: 5px;
   }
   
   label {
     font-weight: bold;
+    position: relative;
     display: block;
-    margin-bottom: 10px;
+    position: relative;
+
   }
   
   .inpdddut[type="file"] {
@@ -156,13 +161,14 @@
     background-color: #252525;
     color: #fff;
     position: relative;
-    top: 9rem;
-    left: 12rem;
+    top: 3rem;
+    left: 7rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  .inpdddut[type="submit"]:hover {
-    background-color: #fcfeff;
+  form{
+   position: relative;
+   bottom: 3px;
   }
+

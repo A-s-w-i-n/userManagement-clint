@@ -1,7 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
+import { useSelector } from "react-redux"
+import axios from "axios";
 import './EditUser.css'
+import {useNavigate} from 'react-router-dom'
+import {ToastContainer,toast} from 'react-toastify'
 
 const EditUser = () => {
+  const navigate = useNavigate()
+  // const {name,id} = useSelector(state => state.admin)
   return (
     <div>
       <div>

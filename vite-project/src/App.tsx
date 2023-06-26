@@ -1,8 +1,8 @@
-import { useState } from 'react'
+
 import './App.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './Comonents/Home/Home'
-import Login from './login/login'
+import Login from './Comonents/login/login'
 import Signup from './Comonents/Signup/Signup'
 import Profile from './Comonents/Profile/Profile'
 import AdminLogin from './Comonents/AdminLogin/AdminLogin'
@@ -14,8 +14,7 @@ import EditUser from './Comonents/Edituser/EditUser'
 
 
 function App() {
-  return (
-   <>
+  return (   <>
   
     <Router>
       <Routes>
